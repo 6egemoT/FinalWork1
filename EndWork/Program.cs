@@ -1,11 +1,36 @@
 ﻿
+string[] array = { "Asphodel", "faw", "n",  "Fawn", "45698", "1897",
+                  "run", "world", "gift", "18)!", "per", "Aurora", 
+                  "Denmark", "gif", "t" };
+string[] FindStringLength(string[] array)
+{
+    int length = 3;
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= length)
+        {
+            count++;
+        }
+    }
 
-
-
-
-
-
-
+    int index = 0;
+    string[] newarray = new string[count];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= length)
+        {
+            newarray[index] = array[i];
+            index++;
+        }
+    }
+    return newarray;
+}
+string[] newarray = FindStringLength(array);
+for (int i = 0; i < newarray.Length; i++)
+{
+    Console.Write($"{newarray[i]} ");
+}
 
 
 

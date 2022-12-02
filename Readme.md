@@ -14,4 +14,4 @@
 [“Russia”, “Denmark”, “Kazan”] → []
 
 
-[Блок-схема](finalwork/diagram.drawio.png) | [Код](finalwork/Program.cs)
+[Блок-схема](FinalWork/EndWork/diagram.drawio.png) | [Код](FinalWork/EndWork//Program.cs)
